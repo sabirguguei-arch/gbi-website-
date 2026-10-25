@@ -1,0 +1,6 @@
+export type Program = { slug: string; title: string; summary: string; imageClass: string; number: string; imageSrc?: string; imageAlt?: string };
+export type ProjectMedia = { src: string; alt: string; width: number; height: number };
+export type ProjectVideo = { src: string; poster: string; title: string; description: string };
+export type Project = { slug: string; title: string; location: string; category: string; summary: string; status: "Historical activity" | "Current project"; period?: string; media?: ProjectMedia[]; video?: ProjectVideo; sourceUrls?: string[]; verificationNote?: string };
+export type Story = { slug: string; title: string; excerpt: string; date: string; category: string };
+export type Partner = { name: string; type: string };

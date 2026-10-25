@@ -1,0 +1,3 @@
+export type ValueItem = { title: string; description?: string };
+
+export function ValuesGrid({ values }: { values: ValueItem[] }) { return <div className="grid gap-px overflow-hidden border border-[#d1d5c7] bg-[#d1d5c7] sm:grid-cols-2">{values.map((value, index) => <article key={`${value.title}-${index}`} className="relative min-h-44 bg-[#f7f5ee] p-6 sm:p-7"><span className="font-display text-3xl text-[#d5a53e]">0{index + 1}</span><h3 className="font-display mt-6 text-2xl text-[#17342a]">{value.title}</h3>{value.description && <p className="mt-3 text-sm leading-6 text-[#536b61]">{value.description}</p>}</article>)}</div>; }

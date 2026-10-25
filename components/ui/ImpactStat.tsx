@@ -1,0 +1,1 @@
+export function ImpactStat({ title, description }: { title: string; description: string }) { return <div className="gbi-surface border-l-2 border-l-[#d5a53e] p-5"><p className="font-display text-2xl text-[#113e31]">{title}</p><p className="mt-2 max-w-56 text-sm leading-5 text-[#536b61]">{description}</p></div>; }

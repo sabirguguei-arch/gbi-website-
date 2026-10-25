@@ -1,0 +1,15 @@
+.next/
+node_modules/
+.env*
+!.env.example
+
+# Local logs and build/type-check caches
+*.log
+tsconfig.tsbuildinfo
+
+# Temporary Codex attachments
+.codex-remote-attachments/
+
+# Local VS Code task runner state
+.vscode/tasks.json
+

@@ -1,0 +1,1 @@
+export function VerificationPlaceholder({ label, detail }: { label: string; detail: string }) { return <div className="border-l-2 border-[#d5a53e] bg-white/60 px-5 py-4"><p className="text-[.65rem] font-extrabold uppercase tracking-[.14em] text-[#536b61]">{label}</p><p className="mt-1 text-sm leading-6 text-[#536b61]">{detail}</p></div>; }

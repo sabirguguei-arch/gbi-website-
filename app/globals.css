@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gbi-forest: #113e31;
+  --gbi-green: #1d6a4b;
+  --gbi-leaf: #7fa84d;
+  --gbi-gold: #d5a53e;
+  --gbi-river: #1e6685;
+  --gbi-ink: #17342a;
+  --gbi-muted: #536b61;
+  --gbi-cream: #f7f5ee;
+  --gbi-sand: #e8e2d2;
+  --gbi-sky: #e1eff0;
+  --gbi-line: #d1d5c7;
+  --focus-ring: #d5a53e;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html:focus-within { scroll-behavior: smooth; }
+body { margin: 0; background: var(--gbi-cream); color: var(--gbi-ink); font-family: Inter, Aptos, Arial, sans-serif; font-feature-settings: "kern" 1, "liga" 1; }
+:target { scroll-margin-top: 6rem; }
+::selection { background: #dce5b5; color: var(--gbi-ink); }
+.font-display { font-family: "Iowan Old Style", "Baskerville", Georgia, serif; font-weight: 500; }
+.font-sans { font-family: Inter, Aptos, Arial, sans-serif; }
+.grain { background-image: radial-gradient(rgba(17, 62, 49, .11) .7px, transparent .7px); background-size: 9px 9px; }
+.hero-image { background-image: linear-gradient(90deg, rgba(10, 47, 36, .94) 0%, rgba(10, 47, 36, .72) 45%, rgba(10, 47, 36, .16) 100%), url('/images/projects/gbi-historical/twic-east/emergency-wash-01.jpg'); background-position: center; background-size: cover; }
+@keyframes gbi-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes gbi-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.photo-agriculture { background-image: linear-gradient(0deg, rgba(11, 55, 40, .63), rgba(11, 55, 40, .05)), url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1100&q=80'); background-position: center; background-size: cover; }
+.photo-water { background-image: linear-gradient(0deg, rgba(11, 55, 40, .63), rgba(11, 55, 40, .05)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1100&q=80'); background-position: center; background-size: cover; }
+.photo-community { background-image: linear-gradient(0deg, rgba(11, 55, 40, .63), rgba(11, 55, 40, .05)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1100&q=80'); background-position: center; background-size: cover; }
+.about-terrain { background: radial-gradient(circle at 21% 18%, rgba(213,165,62,.92) 0 3px, transparent 4px), radial-gradient(circle at 79% 72%, rgba(127,168,77,.88) 0 4px, transparent 5px), linear-gradient(128deg, transparent 0 38%, rgba(225,239,240,.1) 38.4% 39%, transparent 39.4% 52%, rgba(225,239,240,.12) 52.4% 53%, transparent 53.4% 100%), linear-gradient(145deg, #1d6a4b 0%, #113e31 62%, #0b3228 100%); }
+
+@layer base {
+  a, button, input, textarea { -webkit-tap-highlight-color: transparent; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+  button:disabled { cursor: not-allowed; opacity: .6; }
+  input, textarea { border-radius: 0; }
+}
+
+@layer components {
+  .gbi-eyebrow { color: var(--gbi-green); font-size: .7rem; font-weight: 800; letter-spacing: .16em; line-height: 1.4; text-transform: uppercase; }
+  .gbi-link { display: inline-flex; align-items: center; gap: .5rem; border-bottom: 1px solid currentColor; padding-bottom: .25rem; font-size: .875rem; font-weight: 700; transition: color 180ms ease, border-color 180ms ease; }
+  .gbi-link:hover { color: var(--gbi-green); }
+  .gbi-surface { border: 1px solid var(--gbi-line); background: rgba(255,255,255,.9); }
+  .gbi-card-lift { transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+  .gbi-card-lift:hover { transform: translateY(-4px); border-color: rgba(29,106,75,.45); box-shadow: 0 16px 36px rgba(17,62,49,.12); }
+  .gbi-photo-overlay { background: linear-gradient(0deg, rgba(10,47,36,.84) 0%, rgba(10,47,36,.24) 52%, rgba(10,47,36,.03) 100%); }
+  .gbi-reveal { animation: gbi-rise 700ms cubic-bezier(.22, 1, .36, 1) both; }
+  .gbi-reveal-delay-1 { animation-delay: 120ms; }
+  .gbi-reveal-delay-2 { animation-delay: 240ms; }
+  .gbi-reveal-delay-3 { animation-delay: 360ms; }
+  .gbi-float { animation: gbi-float 5s ease-in-out infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}

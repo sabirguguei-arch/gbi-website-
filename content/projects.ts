@@ -1,0 +1,55 @@
+import type { Project } from "@/types";
+
+export const projects: Project[] = [
+  {
+    slug: "duk-emergency-food-production",
+    title: "Emergency food production activities",
+    location: "Duk County",
+    category: "Agriculture & Food Security",
+    status: "Historical activity",
+    summary: "Historical emergency food production and field training activities in Duk County.",
+    period: "Historical activity",
+    media: [
+      { src: "/images/projects/gbi-historical/duk-county/emergency-food-production-01.jpg", alt: "Emergency food production activity in Duk County", width: 208, height: 192 },
+      { src: "/images/projects/gbi-historical/duk-county/emergency-food-production-02.jpg", alt: "Community food production activity in Duk County", width: 192, height: 208 },
+      { src: "/images/projects/gbi-historical/duk-county/emergency-food-production-03.jpg", alt: "Field activity from emergency food production work in Duk County", width: 192, height: 208 },
+    ],
+    video: { src: "/images/projects/gbi-historical/duk-county/field-training.mp4", poster: "/images/projects/gbi-historical/duk-county/field-training-poster.jpg", title: "Duk County field training", description: "Field training associated with the historical Duk County activity." },
+    sourceUrls: ["https://x.com/BeltGbi/status/1465748247918559233", "https://x.com/BeltGbi/status/1507757212613156866"],
+    verificationNote: "Media is recorded as historical Duk County emergency food production and training activity. No impact statistics are inferred.",
+  },
+  {
+    slug: "twic-east-emergency-wash",
+    title: "Emergency WASH response",
+    location: "Twic East County",
+    category: "WASH",
+    status: "Historical activity",
+    summary: "Historical emergency water, sanitation and hygiene response in Twic East County.",
+    period: "Historical activity",
+    media: [
+      { src: "/images/projects/gbi-historical/twic-east/emergency-wash-01.jpg", alt: "Emergency WASH response activity in Twic East County", width: 236, height: 72 },
+      { src: "/images/projects/gbi-historical/twic-east/emergency-wash-02.jpg", alt: "Twic East County emergency WASH activity", width: 176, height: 88 },
+      { src: "/images/projects/gbi-historical/twic-east/emergency-wash-03.jpg", alt: "Community WASH activity in Twic East County", width: 176, height: 88 },
+      { src: "/images/projects/gbi-historical/twic-east/emergency-wash-04.jpg", alt: "Emergency water, sanitation and hygiene activity in Twic East County", width: 106, height: 56 },
+    ],
+    sourceUrls: ["https://x.com/BeltGbi/status/1343898002050711552"],
+    verificationNote: "Media is recorded as historical emergency WASH activity in Twic East County. No impact statistics are inferred.",
+  },
+  {
+    slug: "padiet-dongchak-agriculture-fisheries",
+    title: "Agriculture and fishing kits",
+    location: "Padiet/Dongchak",
+    category: "Agriculture & Food Security",
+    status: "Historical activity",
+    summary: "Historical agriculture and fishing kit activities in Padiet/Dongchak.",
+    period: "Historical activity",
+    media: [
+      { src: "/images/projects/gbi-historical/padiet-dongchak/agriculture-fisheries-01.jpg", alt: "Agriculture and fishing kit activity in Padiet/Dongchak", width: 192, height: 208 },
+      { src: "/images/projects/gbi-historical/padiet-dongchak/agriculture-fisheries-02.jpg", alt: "Community agriculture and fishing activity in Padiet/Dongchak", width: 192, height: 208 },
+      { src: "/images/projects/gbi-historical/padiet-dongchak/agriculture-fisheries-03.jpg", alt: "Agriculture and fisheries support activity in Padiet/Dongchak", width: 192, height: 208 },
+    ],
+    sourceUrls: ["https://x.com/BeltGbi/status/1473411473938567169"],
+    verificationNote: "Media is recorded as historical agriculture and fishing kit activity in Padiet/Dongchak. No impact statistics are inferred.",
+  },
+  { slug: "aweil-east-wash-agriculture", title: "WASH and agriculture activities", location: "Aweil East", category: "WASH & Agriculture", status: "Historical activity", summary: "Historical WASH and agriculture activities in Aweil East.", period: "Historical activity" },
+];
