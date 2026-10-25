@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { createMetadata } from "@/lib/seo";
-import gbiLogo from "../../.codex-remote-attachments/01a0d3aa-110d-75e0-98af-81fe6d7a5570/a4a3215f-f152-490d-927e-bf265ccd45fd/1-Screenshot_20260924-214852_Lite.jpg";
+import gbiLogo from "../../public/logo/gbi-logo.jpg";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { Timeline } from "@/components/sections/Timeline";
